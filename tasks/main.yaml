@@ -13,7 +13,7 @@
   template: 
    src: templates/_bash_profile.j2
    dest: "{{ skel_dir }}/.bash_profile"
-   owner: "{{ bash_user | | default('root') }}"
+   owner: "{{ bash_user  | default('root') }}"
    group: "{{ bash_group | default('root') }}"
    mode: 0644
 
@@ -21,6 +21,6 @@
   template: 
    src: templates/_vimrc.j2
    dest: "{{ skel_dir }}/.vimrc"
-   owner: "{{ bash_user | | default('root') }}"
+   owner: "{{ bash_user  | default('root') }}"
    group: "{{ bash_group | default('root') }}"
    mode: 0644
