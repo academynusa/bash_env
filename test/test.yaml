@@ -1,4 +1,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-   - student.bash_env[student@workstation tests]$
+   - sidarmawan.tes-ansible[student@workstation sidarmawan.tes-ansible]$
